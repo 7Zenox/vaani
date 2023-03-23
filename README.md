@@ -19,7 +19,7 @@ vaani is a religious text generator. The project's purpose is to extract relevan
   <h4> The outcome will include: </h4>
   <li> Shlok from Gita </ul>
   <li> Verse from Quran </ul>
-  <li> Several other quotes from relgious texts... </li>
+  <li> Several other quotes from religious texts... </li>
   <li> Explanation of the most appropriate quote </li>
   </td>
   </tr>
