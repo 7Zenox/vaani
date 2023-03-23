@@ -8,7 +8,7 @@ vaani is a religious text generator. The project's purpose is to extract relevan
   <table align="center">
   <tr> 
     <td> <p align="center">
-  <img height=565 width=400 src="https://user-images.githubusercontent.com/91457798/222340005-66fd1185-76b7-4408-905b-5e1daa114818.jpg">
+    ![sacred_ai jpg](https://user-images.githubusercontent.com/91457798/227112806-ae5b348a-15c2-4d6d-9721-c4971794b30a.png)
       </p> </td>
     
   <td> 
