@@ -7,9 +7,9 @@ vaani is a religious text generator. The project's purpose is to extract relevan
   
   <table align="center">
   <tr> 
-    <td> <p align="center">
+    <td>
       ![vaani_poster](https://user-images.githubusercontent.com/91457798/227113162-d19b98aa-0f42-4515-afa2-1297e9c32ab5.png)
-      </p> </td>
+      </td>
     
   <td> 
   <h4> As a user input, the program will require: </h4>
