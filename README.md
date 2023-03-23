@@ -8,12 +8,12 @@ A repository for a Design Thinking and Innovation course at Bennett University 2
 vaani is a religious text generator. The project's purpose is to extract relevant verses and quotes from religious texts by factoring the user's input as a problem statement to be resolved. </p>
   
   <table align="center">
-  <tr>
-    <td> <p align="center">
-  <img height=565 width=400 src="https://user-images.githubusercontent.com/91457798/222340005-66fd1185-76b7-4408-905b-5e1daa114818.jpg">
-      </p> </td>
-
-  <td>
+  <tr> 
+    <td>
+      <img src="https://user-images.githubusercontent.com/91457798/227113490-83134913-5e0c-49e2-abff-c065d546afde.png" width=350px height=496px>
+    </td>
+    
+  <td> 
   <h4> As a user input, the program will require: </h4>
   <li> Problem Statement </li>
   <br>
