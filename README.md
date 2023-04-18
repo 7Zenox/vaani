@@ -26,3 +26,8 @@ vaani is a religious text generator. The project's purpose is to extract relevan
   </td>
   </tr>
   </table>
+
+## To run
+
+1. change directory into django_vaani - cd django_vaani
+2. run server - python manage.py runserver 

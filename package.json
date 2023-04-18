@@ -1,0 +1,17 @@
+{
+  "name": "vaani",
+  "version": "1.0.0",
+  "description": "A repository for a Design Thinking and Innovation course at Bennett University 2022-2023. Created by Team number e as part of the course, by members Vasu Jain, Anand Chauhan, Amee Madhani and Ananya Chauhan. The entire project is in development since January 2023 for a period of 4 months.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "python-shell": "^5.0.0",
+    "tensorflow.js": "^0.0.0"
+  }
+}

@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: "font";
+      src: url(fonts/TOSTADA.ttf) format("truetype");
+    }
+
+    ::selection {
+      background-color: #c3cfe2;
+    }
+
+    body {
+      font-family: "helvetica";
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      /* align-items: center; */
+      /* justify-content: center; */
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+
+      transition: background-color 0.5s;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      /* background-color: rgb(0, 0, 0); */
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+
+      background: linear-gradient(to right,
+          #ade8f4 10%,
+          #90e0ef 20%,
+          #48cae4 30%,
+          #00b4d8 40%,
+          #0096c7 50%,
+          #0077b6 60%,
+          #023e8a 75%,
+          #03045e 100%);
+      /* -webkit-background-clip: */
+      -webkit-text-fill-color: whitesmoke;
+      opacity: 0.9;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #0f9fcb;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left 0.5s;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    .text {
+      display: inline-block;
+      padding: 0px 600px;
+      text-align: center;
+      /* margin-left: 40%; */
+      margin-top: 0%;
+      font-size: 700%;
+      font-family: "poppins";
+
+      /* align-items: center; */
+      /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+      text-transform: lowercase;
+      background: linear-gradient(to right, #ade8f4 43%, #0077b6 55%, #03045e 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    input {
+      margin-left: 10%;
+      width: 80%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 0.6em;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: both;
+    }
+
+    textarea {
+      margin-left: 10%;
+      width: 80%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 0.6em;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+    }
+
+    h2 {
+      margin-left: 10%;
+      margin-top: 2%;
+    }
+
+    #submit1 {
+      margin-left: 50%;
+      background-color: black;
+      box-sizing: border-box;
+      appearance: none;
+      background-color: transparent;
+      border: 2px solid red;
+      border-radius: 0.6em;
+      color: red;
+      cursor: pointer;
+      display: flex;
+      align-self: center;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1;
+      margin: 20px;
+      padding: 1.2em 2.8em;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    #submit1:hover,
+    #submit1:focus {
+      color: black;
+      outline: 0;
+    }
+
+    #submit1 {
+      margin-left: 10%;
+      border-color: #023e8a;
+      color: #fff;
+      box-shadow: 0 0 40px 40px #023e8a inset, 0 0 0 0 #023e8a;
+      transition: all 150ms ease-in-out;
+    }
+
+    #submit1:hover {
+      box-shadow: 0 0 10px 0 #023e8a inset, 0 0 10px 4px #1971e4;
+
+    }
+
+    #quest {
+      margin-top: 5%;
+    }
+
+    #option {
+      background-color: #a1d8e3;
+      border: none;
+      color: #012a60;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 0.6em;
+
+    }
+
+    #option:hover {
+      opacity: 1;
+    }
+
+    h3 {
+      margin-left: 10%;
+    }
+
+    #extras {
+      margin-left: 10%;
+    }
+  </style>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <div id="main">
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()">
+      &#9776;
+    </span>
+
+    <h1 class="text" style="text-align: center;">vaani</h1>
+
+    <br />
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/">Home</a>
+      <a href="/">Abous Us</a>
+      <a href="/">Contact Us</a>
+      <a href="/">Help</a>
+    </div>
+    <div id="quest">
+      <h2>What troubles you, my child?</h2>
+      <form action="/" method="post">
+        {% csrf_token %}
+        <!-- {{ form }} -->
+        <textarea name="input1" placeholder="How can I find inner peace in the midst of chaos?"></textarea>
+        <button id="submit1" type="submit">Ask from the sacred one!</button>
+      </form>
+      <br>
+      <h3>
+        Or, try one of these
+      </h3>
+      <div id="extras">
+        <button id="option">Meaning of Dharma?</button>
+        <button id="option">How to find inner peace?</button>
+        <button id="option">What is the meaning of life?</button>
+        <button id="option">Meaning of Peace?</button>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <!-- Output -->
+
+      <h3>
+        Gita Says,
+      </h3>
+      <textarea id="output1" cols="30" rows="10">{{answer1}}</textarea>
+      <h3>
+        Bible Says,
+      </h3>
+      <textarea id="output2" cols="30" rows="10">{{answer2}}</textarea>
+      <h3>
+        Quran Says,
+      </h3>
+      <textarea id="output3" cols="30" rows="10">{{answer3}}</textarea>
+      <!-- <h3>
+        what does the sacred says?
+      </h3>
+      <textarea id="output4" cols="30" rows="10"></textarea> -->
+
+    </div>
+  </div>
+  <!-- <script>
+    function handleSubmit() {
+      const query = document.getElementById('input1').value;
+
+      fetch('/predict', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ query })
+      })
+        .then(response => response.json())
+        .then(result => {
+          document.getElementById('output1').value = result.output1;
+          document.getElementById('output2').value = result.output2;
+          document.getElementById('output3').value = result.output3;
+        })
+        .catch(error => console.error(error));
+
+    }
+  </script> -->
+
+
+</body>
+
+</html>

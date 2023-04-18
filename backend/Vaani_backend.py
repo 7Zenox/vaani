@@ -1,8 +1,12 @@
 import tensorflow as tf
+# import keras
 import numpy as np
 import pandas as pd
+# import tensorflow.compat.v1 as tf
 # future updates for multithreading
 from threading import Thread
+
+
 import spacy
 nlp = spacy.load('en_core_web_lg')
 
@@ -138,7 +142,7 @@ if __name__ == '__main__':
     predictor = VaaniPredictor()
     query = input("What troubles you, friend?\n=> ")
     pprint(predictor.predict(query))
-
+    
 """
 Sample input: What is the meaning of life?
 Sample output:
