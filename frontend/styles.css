@@ -96,6 +96,19 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+input {
+  margin-left: 10%;
+  width: 80%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 0.6em;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize:both;
+}
+
 textarea {
   margin-left: 10%;
   width: 80%;
@@ -111,9 +124,10 @@ textarea {
 
 h2 {
 	margin-left: 10%;
+  margin-top:2%;
 }
 
-#submit {
+#submit1 {
   margin-left: 50%;
   background-color: black;
   box-sizing: border-box;
@@ -136,12 +150,12 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
-  #submit:hover,
-  #submit:focus {
+  #submit1:hover,
+  #submit1:focus {
     color: black;
     outline: 0;
   }
-  #submit {
+  #submit1 {
     margin-left: 10%;
     border-color: #023e8a;
     color: #fff;
@@ -149,7 +163,7 @@ h2 {
     transition: all 150ms ease-in-out;
   }
     
-    #submit:hover {
+    #submit1:hover {
       box-shadow: 0 0 10px 0 #023e8a inset, 0 0 10px 4px #1971e4;
     
   }
