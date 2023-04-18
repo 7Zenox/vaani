@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "django_vaani/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "django_vaani/wsgi.py"
+        }
+    ]
+}
