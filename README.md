@@ -1,4 +1,4 @@
-# vaani <br>
+# *vaani* <br>
 
 A repository for a Design Thinking and Innovation course at Bennett University 2022-2023. Created by Team number e as part of the course, by members Vasu Jain, Anand Chauhan, Amee Madhani and Ananya Chauhan. The entire project is in development since January 2023 for a period of 4 months.
 
@@ -8,12 +8,12 @@ A repository for a Design Thinking and Innovation course at Bennett University 2
 vaani is a religious text generator. The project's purpose is to extract relevant verses and quotes from religious texts by factoring the user's input as a problem statement to be resolved. </p>
   
   <table align="center">
-  <tr> 
+  <tr>
     <td>
       <img src="https://user-images.githubusercontent.com/91457798/227113490-83134913-5e0c-49e2-abff-c065d546afde.png" width=350px height=496px>
     </td>
-    
-  <td> 
+
+  <td>
   <h4> As a user input, the program will require: </h4>
   <li> Problem Statement </li>
   <br>
@@ -29,5 +29,6 @@ vaani is a religious text generator. The project's purpose is to extract relevan
 
 ## To run
 
-1. change directory into django_vaani - cd django_vaani
-2. run server - python manage.py runserver 
+1. change directory into django_vaani - `cd django_vaani`
+2. run migrate first (only needs to be done once) - `python manage.py runserver`
+3. run server - `python manage.py runserver`
