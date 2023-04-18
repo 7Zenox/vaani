@@ -1,3 +1,4 @@
+//does nothing, for my reference. 
 
 // const express = require("express");
 // const bodyParser = require("body-parser");
@@ -47,10 +48,6 @@
 //   const query = req.body.input1;
 //     console.log(query)
 // })
-
-
-
-
 
 // // app.post("/predict", (req, res) => {
 // //   let query = req.body.query;
