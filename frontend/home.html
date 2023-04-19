@@ -1,99 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <script src="home.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()">
+        &#9776;
+      </span>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="home.js"></script>
-</head>
+      <h1 class="text" style="text-align: center;">vaani</h1>
 
-<body>
-  <div id="main">
-    <span style="font-size: 30px; cursor: pointer" onclick="openNav()">
-      &#9776;
-    </span>
+      <br />
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Help</a>
+      </div>
 
-    <h1 class="text" style="text-align: center;">vaani</h1>
-
-    <br />
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/">Home</a>
-      <a href="/about">Abous Us</a>
-      <a href="/contact">Contact Us</a>
-      <a href="/help">Help</a>
-    </div>
-    <div id="quest">
+      <div id = "quest">
       <h2>What troubles you, my child?</h2>
-      <form action="/" method="post">
-        <!-- {% csrf_token %} -->
-        <!-- {{ form }} -->
+      <form>
+        <textarea id = "input1"placeholder="How can I find inner peace in the midst of chaos?" style="font-family: 'body_font';"></textarea>
+        <input type="submit" id="submit" value="Ask from the sacred one!" onclick="showDiv()">
 
-        <textarea name="input1" placeholder="How can I find inner peace in the midst of chaos?"></textarea>
-        <button id="submit1" type="submit">Ask from the sacred one!</button>
       </form>
       <br>
       <h3>
         Or, try one of these
       </h3>
-      <div id="extras">
-        <button id="option">Meaning of Dharma?</button>
-        <button id="option">How to find inner peace?</button>
-        <button id="option">What is the meaning of life?</button>
-        <button id="option">Meaning of Dharma?</button>
-      </div>
+      <div id = "extras">
+        <button id = "option">Meaning of Dharma?</button>
+        <button id = "option">How to find inner peace?</button>
+        <button id = "option">What is the meaning of life?</button>
+        <button id = "option">Meaning of Dharma?</button>
+    </div>
       <br>
       <br>
       <br>
       
-      <!-- Output -->
-
-      <h3>
+    <!-- Output -->
+  <form id = "OUTPUT" >
+    <h3 style="color: black;">
         Gita Says,
       </h3>
-      <textarea id="output1" cols="30" rows="10">{{answer1}}</textarea>
-      <h3>
+    <textarea id="output1" cols="30" rows="10"></textarea>
+    <h3 style="color: black;">
         Bible Says,
       </h3>
-      <textarea id="output2" cols="30" rows="10">{{answer2}}</textarea>
-      <h3>
+    <textarea id="output1" cols="30" rows="10"></textarea>
+    <h3 style="color: black;">
         Quran Says,
       </h3>
-      <textarea id="output3" cols="30" rows="10">{{answer3}}</textarea>
-      <!-- <h3>
+    <textarea id="output1" cols="30" rows="10"></textarea>
+    <h3 style="color: black;">
         what does the sacred says?
       </h3>
-      <textarea id="output4" cols="30" rows="10"></textarea> -->
-
+    <textarea id="output1" cols="30" rows="10"></textarea>
+</form>
     </div>
-  </div>
-  <!-- <script>
-    function handleSubmit() {
-      const query = document.getElementById('input1').value;
-
-      fetch('/predict', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ query })
-      })
-        .then(response => response.json())
-        .then(result => {
-          document.getElementById('output1').value = result.output1;
-          document.getElementById('output2').value = result.output2;
-          document.getElementById('output3').value = result.output3;
-        })
-        .catch(error => console.error(error));
-
-    }
-  </script> -->
-
-
-</body>
-
+    </div>
+  </body>
 </html>

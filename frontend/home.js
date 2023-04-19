@@ -10,4 +10,19 @@ function openNav() {
     document.body.style.backgroundColor = "white";
   }
 
+  const submitForm = (value, displayer) => {
+	let input = document.getElementById(value);
+	let output1 = document.getElementById(displayer);
+	let inputValue = input.value;
+
+	output1.innerHTML = inputValue;
+    input.value = '';
+};
+
+const form = document.getElementById('OUTPUT');
+
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
+	submitForm('input1', 'output1');
+});
 
