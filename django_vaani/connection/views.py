@@ -10,7 +10,14 @@ import pandas as pd
 
 
 import spacy
-nlp = spacy.load('en_core_web_lg')
+# Check if the 'en_core_web_lg' model is installed
+try:
+    nlp = spacy.load('en_core_web_lg')
+except OSError:
+    print("Model 'en_core_web_lg' not found. Installing now...")
+    spacy.cli.download('en_core_web_lg')
+    nlp = spacy.load('en_core_web_lg')
+    print("Model 'en_core_web_lg' installed successfully.")
 
 MAX_LENGTH = 256
 
